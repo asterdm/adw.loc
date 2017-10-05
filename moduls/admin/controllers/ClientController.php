@@ -4,6 +4,7 @@ namespace app\moduls\admin\controllers;
 
 use Yii;
 use app\models\Client;
+use app\models\Report;
 use app\models\ClientSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -51,8 +52,13 @@ class ClientController extends Controller
      */
     public function actionView($id)
     {
+        $client = $this->findModel($id);       
+        $reports = $client->reports;
+        
         return $this->render('view', [
             'model' => $this->findModel($id),
+            'attributes' => $reports[0]->attributes(),
+            'reports' => $reports,
         ]);
     }
 
@@ -105,6 +111,25 @@ class ClientController extends Controller
 
         return $this->redirect(['index']);
     }
+    
+    public function actionAddReport($id)
+    {
+        $client = $this->findModel($id);       
+        $reports = $client->reports;
+        foreach ($reports as  $report) {
+            $added_reports[]= $report->id_report;
+        }
+        
+        $available_report = Report::find()->asArray()->where(['not in','id_report', $added_reports])->all();
+        //var_dump($available_report);die;
+
+        return $this->render('addreport', [
+           
+            'attributes' => $reports[0]->attributes(),
+            'reports' => $reports,
+            'available_report' => $available_report,
+        ]);
+    }    
 
     /**
      * Finds the Client model based on its primary key value.

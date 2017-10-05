@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\ArrayHelper;
 use yii\widgets\DetailView;
 use yii\widgets\ListView;
 
@@ -15,28 +16,17 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="client-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
+    
+    <?= Html::beginForm(['order/update', 'id' => $id], 'post', ['enctype' => 'multipart/form-data']) ?>
+    <?php//var_dump($available_report[0])?>
+    
 
-    <p>
-        <?= Html::a('Update', ['update', 'id' => $model->id_client], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->id_client], [
-            'class' => 'btn btn-danger',
-            'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
-                'method' => 'post',
-            ],
-        ]) ?>
-    </p>
+    <?= Html::checkbox('agree', true, ArrayHelper::map($available_report[0], 'id_report', 'report_description')); ?>
 
-    <?= DetailView::widget([
-        'model' => $model,
-        'attributes' => [
-            'id_client',
-            'login',
-            'password',
-        ],
-    ]) ?>
-    <?= Html::a('Add Report', ['add-report', 'id' => $model->id_client], ['class' => 'btn btn-primary']) ?>
-     
+    <?= Html::submitButton('Submit', ['class' => 'submit']) ?>
+
+    <?= Html::endForm() ?> 
+    
     <div class="py-5">
     <div class="container">
       <div class="row">

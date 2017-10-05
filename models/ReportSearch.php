@@ -19,7 +19,7 @@ class ReportSearch extends Report
     {
         return [
             [['id_report'], 'integer'],
-            [['report_url'], 'safe'],
+            [['report_url', 'report_description'], 'safe'],
         ];
     }
 
@@ -62,7 +62,8 @@ class ReportSearch extends Report
             'id_report' => $this->id_report,
         ]);
 
-        $query->andFilterWhere(['like', 'report_url', $this->report_url]);
+        $query->andFilterWhere(['like', 'report_url', $this->report_url])
+            ->andFilterWhere(['like', 'report_description', $this->report_description]);
 
         return $dataProvider;
     }

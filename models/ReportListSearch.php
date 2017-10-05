@@ -18,7 +18,8 @@ class ReportListSearch extends ReportList
     public function rules()
     {
         return [
-            [['id_report_list', 'report_id', 'client_id'], 'integer'],
+            [['id_report_list', 'client_id', 'report_id'], 'integer'],
+            [['client_login', 'report_name'], 'safe'],
         ];
     }
 
@@ -59,9 +60,12 @@ class ReportListSearch extends ReportList
         // grid filtering conditions
         $query->andFilterWhere([
             'id_report_list' => $this->id_report_list,
-            'report_id' => $this->report_id,
             'client_id' => $this->client_id,
+            'report_id' => $this->report_id,
         ]);
+
+        $query->andFilterWhere(['like', 'client_login', $this->client_login])
+            ->andFilterWhere(['like', 'report_name', $this->report_name]);
 
         return $dataProvider;
     }

@@ -9,6 +9,7 @@ use Yii;
  *
  * @property string $id_report
  * @property string $report_url
+ * @property string $report_description
  *
  * @property ReportList[] $reportLists
  */
@@ -28,10 +29,8 @@ class Report extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id_report'], 'required'],
-            [['id_report'], 'integer'],
             [['report_url'], 'string', 'max' => 200],
-            [['id_report'], 'unique'],
+            [['report_description'], 'string', 'max' => 45],
         ];
     }
 
@@ -43,6 +42,7 @@ class Report extends \yii\db\ActiveRecord
         return [
             'id_report' => 'Id Report',
             'report_url' => 'Report Url',
+            'report_description' => 'Report Description',
         ];
     }
 

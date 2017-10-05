@@ -26,6 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'id_report',
             'report_url:url',
+            'report_description',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

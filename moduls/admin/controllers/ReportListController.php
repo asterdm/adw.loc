@@ -46,13 +46,15 @@ class ReportListController extends Controller
 
     /**
      * Displays a single ReportList model.
-     * @param string $id
+     * @param string $id_report_list
+     * @param string $client_id
+     * @param string $report_id
      * @return mixed
      */
-    public function actionView($id)
+    public function actionView($id_report_list, $client_id, $report_id)
     {
         return $this->render('view', [
-            'model' => $this->findModel($id),
+            'model' => $this->findModel($id_report_list, $client_id, $report_id),
         ]);
     }
 
@@ -66,7 +68,7 @@ class ReportListController extends Controller
         $model = new ReportList();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id_report_list]);
+            return $this->redirect(['view', 'id_report_list' => $model->id_report_list, 'client_id' => $model->client_id, 'report_id' => $model->report_id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -77,15 +79,17 @@ class ReportListController extends Controller
     /**
      * Updates an existing ReportList model.
      * If update is successful, the browser will be redirected to the 'view' page.
-     * @param string $id
+     * @param string $id_report_list
+     * @param string $client_id
+     * @param string $report_id
      * @return mixed
      */
-    public function actionUpdate($id)
+    public function actionUpdate($id_report_list, $client_id, $report_id)
     {
-        $model = $this->findModel($id);
+        $model = $this->findModel($id_report_list, $client_id, $report_id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id_report_list]);
+            return $this->redirect(['view', 'id_report_list' => $model->id_report_list, 'client_id' => $model->client_id, 'report_id' => $model->report_id]);
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -96,12 +100,14 @@ class ReportListController extends Controller
     /**
      * Deletes an existing ReportList model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
-     * @param string $id
+     * @param string $id_report_list
+     * @param string $client_id
+     * @param string $report_id
      * @return mixed
      */
-    public function actionDelete($id)
+    public function actionDelete($id_report_list, $client_id, $report_id)
     {
-        $this->findModel($id)->delete();
+        $this->findModel($id_report_list, $client_id, $report_id)->delete();
 
         return $this->redirect(['index']);
     }
@@ -109,13 +115,15 @@ class ReportListController extends Controller
     /**
      * Finds the ReportList model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
-     * @param string $id
+     * @param string $id_report_list
+     * @param string $client_id
+     * @param string $report_id
      * @return ReportList the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
-    protected function findModel($id)
+    protected function findModel($id_report_list, $client_id, $report_id)
     {
-        if (($model = ReportList::findOne($id)) !== null) {
+        if (($model = ReportList::findOne(['id_report_list' => $id_report_list, 'client_id' => $client_id, 'report_id' => $report_id])) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

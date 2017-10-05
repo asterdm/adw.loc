@@ -8,8 +8,10 @@ use Yii;
  * This is the model class for table "report_list".
  *
  * @property string $id_report_list
- * @property string $report_id
+ * @property string $client_login
+ * @property string $report_name
  * @property string $client_id
+ * @property string $report_id
  *
  * @property Client $client
  * @property Report $report
@@ -30,9 +32,9 @@ class ReportList extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id_report_list'], 'required'],
-            [['id_report_list', 'report_id', 'client_id'], 'integer'],
-            [['id_report_list'], 'unique'],
+            [['client_login', 'client_id', 'report_id'], 'required'],
+            [['client_id', 'report_id'], 'integer'],
+            [['client_login', 'report_name'], 'string', 'max' => 45],
             [['client_id'], 'exist', 'skipOnError' => true, 'targetClass' => Client::className(), 'targetAttribute' => ['client_id' => 'id_client']],
             [['report_id'], 'exist', 'skipOnError' => true, 'targetClass' => Report::className(), 'targetAttribute' => ['report_id' => 'id_report']],
         ];
@@ -45,8 +47,10 @@ class ReportList extends \yii\db\ActiveRecord
     {
         return [
             'id_report_list' => 'Id Report List',
-            'report_id' => 'Report ID',
+            'client_login' => 'Client Login',
+            'report_name' => 'Report Name',
             'client_id' => 'Client ID',
+            'report_id' => 'Report ID',
         ];
     }
 

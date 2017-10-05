@@ -30,6 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'id_report',
             'report_url:url',
+            'report_description',
         ],
     ]) ?>
 

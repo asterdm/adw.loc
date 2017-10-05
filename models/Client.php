@@ -28,11 +28,10 @@ class Client extends \yii\db\ActiveRecord
      */
     public function rules()
     {
-        return [
-            [['id_client'], 'required'],
-            [['id_client'], 'integer'],
+        return [           
+          
+            [['login', 'password'],'required'],
             [['login', 'password'], 'string', 'max' => 45],
-            [['id_client'], 'unique'],
         ];
     }
 
@@ -54,5 +53,11 @@ class Client extends \yii\db\ActiveRecord
     public function getReportLists()
     {
         return $this->hasMany(ReportList::className(), ['client_id' => 'id_client']);
+    }
+    
+    public function getReports()
+    {
+        return $this->hasMany(Report::className(), ['id_report' => 'report_id'])
+            ->viaTable('report_list', ['client_id' => 'id_client']);
     }
 }

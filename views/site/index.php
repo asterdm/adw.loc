@@ -15,7 +15,8 @@
           <div class="row">
 
                <div class="col-md-6 col-sm-6">
-                    <div class="home-img"></div>
+                   <div class="home-img" style="background: url('/main/images/home-img.jpg') no-repeat;  background-size: cover;
+  background-position: 50% 50%;"></div>
                </div>
 
                <div class="col-md-6 col-sm-6">
@@ -239,7 +240,13 @@
                <div class="col-md-offset-1 col-md-10 col-sm-12">
                     <i class="wow fadeInUp fa fa-star" data-wow-delay="0.6s"></i>
                     <h2 class="wow fadeInUp" data-wow-delay="0.8s">Портфолио</h2>
-                    <p class="wow fadeInUp" data-wow-delay="1s">Cкоро тут будут ссылки на работы</p>
+                    <p class="wow fadeInUp" data-wow-delay="1s"><a href="">Примеры отчетов</a></p>
+                    <p class="wow fadeInUp" data-wow-delay="1s"><a href="">Примеры отчетов</a></p>
+                    <p class="wow fadeInUp" data-wow-delay="1s"><a href="">Примеры отчетов</a></p>
+                    <p class="wow fadeInUp" data-wow-delay="1s"><a href="">Примеры отчетов</a></p>
+                    <p class="wow fadeInUp" data-wow-delay="1s"><a href="">Примеры отчетов</a></p>
+                    <p class="wow fadeInUp" data-wow-delay="1s"><a href="">Примеры отчетов</a></p>
+                    <p class="wow fadeInUp" data-wow-delay="1s"><a href="">Примеры отчетов</a></p>
                </div>
 
           </div>

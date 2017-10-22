@@ -8,6 +8,8 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\MainAsset;
+use yii\bootstrap\Carousel;
+
 
 MainAsset::register($this);
 ?>
@@ -39,18 +41,18 @@ MainAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'nav navbar-nav navbar-right'],  
         'items' => [
-            ['label' => 'Начало', 'url' => ['index','#' => 'home'],'linkOptions' => ['class' => 'smoothScroll']],
-            ['label' => 'Обо мне', 'url' => ['index','#' => 'about'],'linkOptions' => ['class' => 'smoothScroll']],
-            ['label' => 'Опыт и знания', 'url' => ['index','#' => 'experience'],'linkOptions' => ['class' => 'smoothScroll']],
-            ['label' => 'Портфолио', 'url' => ['index','#' => 'quotes'],'linkOptions' => ['class' => 'smoothScroll']],
-            ['options' => ['class' => 'dropdown'],'label' => 'Контакты', 'url' => ['index','#' => 'contact'],'linkOptions' => ['class' => 'smoothScroll']],
+            ['label' => 'Начало', 'url' => ['/site/index','#' => 'home'],'linkOptions' => ['class' => 'smoothScroll']],
+            ['label' => 'Обо мне', 'url' => ['/site/index','#' => 'about'],'linkOptions' => ['class' => 'smoothScroll']],
+            ['label' => 'Опыт и знания', 'url' => ['/site/index','#' => 'experience'],'linkOptions' => ['class' => 'smoothScroll']],
+            ['label' => 'Портфолио', 'url' => ['/site/index','#' => 'quotes'],'linkOptions' => ['class' => 'smoothScroll']],
+            ['options' => ['class' => 'dropdown'],'label' => 'Контакты', 'url' => ['/site/index','#' => 'contact'],'linkOptions' => ['class' => 'smoothScroll']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login'],'linkOptions' => ['class' => 'smoothScroll']]
             ) : (
                 '<li>'
                 . Html::beginForm(['/site/logout'], 'post')
                 . Html::submitButton(
-                    'Logout (' . Yii::$app->user->identity->username . ')',
+                    'Logout (' . Yii::$app->user->identity->login . ')',
                     ['class' => 'smoothScroll']
                 )
                 . Html::endForm()

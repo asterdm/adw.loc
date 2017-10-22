@@ -16,20 +16,20 @@ use yii\web\AssetBundle;
 class MainAsset extends AssetBundle
 {
     public $basePath = '@webroot';
-    public $baseUrl = '@web';
+    public $baseUrl = '@web/main/';
     public $css = [
-        'main/css/animate.css',
-        'main/css/bootstrap.min.css',
-        'main/css/font-awesome.min.css',
-        'main/css/style.css',
+        'css/animate.css',
+        'css/bootstrap.min.css',
+        'css/font-awesome.min.css',
+        'css/style.css',
     ];
     public $js = [
-        'main/js/bootstrap.min.js',
-        'main/js/custom.js',
-        'main/js/jquery.js',
-        'main/js/jquery.parallax.js',
-        'main/js/smoothscroll.js',
-        'main/js/wow.min.js',
+        'js/bootstrap.min.js',
+        'js/custom.js',
+        'js/jquery.js',
+        'js/jquery.parallax.js',
+        'js/smoothscroll.js',
+        'js/wow.min.js',
         
         
     ];

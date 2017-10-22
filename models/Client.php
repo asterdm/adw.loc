@@ -13,7 +13,7 @@ use Yii;
  *
  * @property ReportList[] $reportLists
  */
-class Client extends \yii\db\ActiveRecord
+class Client extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
 {
     /**
      * @inheritdoc
@@ -59,5 +59,35 @@ class Client extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Report::className(), ['id_report' => 'report_id'])
             ->viaTable('report_list', ['client_id' => 'id_client']);
+    }
+
+    public function getAuthKey() {
+        
+    }
+
+    public function getId() {
+        
+        return $this->id_client;
+    }
+
+    public function validateAuthKey($authKey) {
+        
+    }
+
+    public static function findIdentity($id) {
+        
+        return Client::find()
+            ->where(['id_client' => $id])
+            ->one();
+    }
+
+    public static function findIdentityByAccessToken($token, $type = null) {
+        
+    }
+    
+    public function validatePassword($password)
+    {
+        return $this->password === $password;
+
     }
 }

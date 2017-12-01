@@ -26,10 +26,10 @@
                               <h1 class="wow fadeInUp" data-wow-delay="0.6s">Меня зовут <strong>Дмитрий Югин</strong>. Я интернет-маркетолог</h1>
                               <p class="wow fadeInUp" data-wow-delay="0.9s">В качестве <u>интернет маркетолога</u> могу выполнять следующие обязанности</p>
                               <h4 class="wow fadeInUp" data-wow-delay="1s"><span class="glyphicon glyphicon-ok"></span> Стратегическое планирование продвижения товаров и услуг</h4>
-                              <h4 class="wow fadeInUp" data-wow-delay="1.1s"><span class="glyphicon glyphicon-ok"></span> Маркетинговое исследование рынка и изучение целевой аудитории</h4>
-                              <h4 class="wow fadeInUp" data-wow-delay="1.2s"><span class="glyphicon glyphicon-ok"></span> Подбор команды для реализации интернет маркетинговой стратегии</h4>
-                              <h4 class="wow fadeInUp" data-wow-delay="1.3s"><span class="glyphicon glyphicon-ok"></span> Анализ эффективности рекламных материалов и достижения поставленных KPI</h4>
-                              <h4 href="11111111111#about" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="1.4s">Подробнее</a>
+                              <h4 class="wow fadeInUp" data-wow-delay="1.3s"><span class="glyphicon glyphicon-ok"></span> Маркетинговое исследование рынка и изучение целевой аудитории</h4>
+                              <h4 class="wow fadeInUp" data-wow-delay="1.6s"><span class="glyphicon glyphicon-ok"></span> Подбор команды для реализации интернет маркетинговой стратегии</h4>
+                              <h4 class="wow fadeInUp" data-wow-delay="1.9s"><span class="glyphicon glyphicon-ok"></span> Анализ эффективности рекламных материалов и достижения поставленных KPI</h4>
+                              <a href="11111111111#about" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="2s">Подробнее</a>
 
                               
                          </div>
@@ -51,12 +51,12 @@
                <div class="col-md-6 col-sm-12">
                     <div class="about-thumb">
                          <div class="wow fadeInUp section-title" data-wow-delay="0.4s">
-                              <h1>Управление интернет маркетингом</h1>
-                              <p class="color-yellow">Как вести прибыльный бизнес через сеть?</p>
+                             <h1>Что делает <em>интернет маркетолог</em>?</h1>
+                             <p class="color-yellow"><b>Если кратко: организация выполнения целей по продвижению товаров и услуг самым эффективным способом в сети интернет</p>
                          </div>
                          <div class="wow fadeInUp" data-wow-delay="0.8s">
-                              <p>Жизнь современного человека уже сложно представить без интернета. Работа, общение, шопинг, отдых, развлечения...Можно перечислять бесконечно. Раз интернет так глубоко проник в нашу жизнь, можно ли его использовать для развития бизнеса? Ответ определенно - ДА!</p>
-                              <p>Правильно взаимодействия с аудиторией, размещая рекламу в нужное время в нужном месте можно достичь поставленных бизнес целей. Но как это сделать правильно? Ответ - комплексный интернет маркетинг</p>
+                              <p>Жизнь современного человека уже сложно представить без интернета. Работа, общение, шопинг, отдых, развлечения...Вслед за аудиторией и удовлетворением ее потребностей в интернет переходит и бизнес. С каждым днем появляются новые стартапы или крупные игроки с многомиллионными оборотами переходят в онлайн.</p>
+                              <p>Почему же классические маркетологи не переходят в сеть? Приведу пример из личного опыта. На изучение особенностей интернет маркетинга мне понадобилось пройти сложный путь. Годы обучения web технологиям, годы необходимой практики для систематизации и поиска самых эффективных путей, ощутимо высокий бюджет и колоссальные временные затраты на повышение квалификации. </p>
                          </div>
                     </div>
                </div>
@@ -74,22 +74,34 @@
 
                          <div class=" wow fadeInUp skills-thumb" data-wow-delay="1.6s">
 						 <h3>Ключевые компетенции</h3>
-                         <strong>Размещение рекламы</strong>
-                              <span class="color-white pull-right">95%</span>
+                         <strong>Размещение SEM(SEO, PPC)</strong>
+                              <span class="color-white pull-right">100%</span>
                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
                                    </div>
 
                          <strong>WEB разработка</strong>
-                              <span class="color-white pull-right">70%</span>
+                              <span class="color-white pull-right">80%</span>
                                    <div class="progress">
                                         <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
                                    </div>
 
-                         <strong>Анализ и планировании</strong>
-                              <span class="color-white pull-right">80%</span>
+                         <strong>SMM</strong>
+                              <span class="color-white pull-right">60%</span>
                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                                   </div>
+                          
+                          <strong>WEB аналитика</strong>
+                              <span class="color-white pull-right">95%</span>
+                                   <div class="progress">
+                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+                                   </div>
+                              
+                          <strong>WEB UX дизайн</strong>
+                              <span class="color-white pull-right">50%</span>
+                                   <div class="progress">
+                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
                                    </div>
                          </div>
 
@@ -118,8 +130,8 @@
                <div class="col-md-3 col-sm-6">
                     <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.2s">
                          <i class="fa fa-paper-plane"></i>
-                              <h3>Подготовка контента. Продвижение</h3>
-                              <p class="color-white">Курирование разработки сайтов, лэндингов, медиа материалов (текст, видео, баннеры, анимация). Настройка привлечения целевого трафика.</p>
+                              <h3>Подготовка контента. Сообщения для ЦА</h3>
+                              <p class="color-white">Разработка сайтов, лэндингов, медиа материалов (текст, видео, баннеры, анимация). Настройка привлечения целевого трафика.</p>
                     </div>
                </div>
 
@@ -134,8 +146,8 @@
                <div class="bg-white col-md-3 col-sm-6">
                     <div class="wow fadeInUp service-thumb" data-wow-delay="1.8s">
                          <i class="fa fa-dashboard"></i>
-                              <h3>Анализ достижения целей</h3>
-                              <p>Организация периодических отчетов по достижению коммерческих целей, отслеживание и планирование контрольных точек проектов.</p>
+                              <h3>Выбор канала коммуникации</h3>
+                              <p>SEO SEM SMM таргетированная реклама, динамическая, ретаргетинг для площадок Yandex Google и их партнеров, видео и медийное размещение</p>
                     </div>
                </div>
 
@@ -199,7 +211,7 @@
                     <div class="color-white education-thumb">
                          <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
                               <h1>Мои знания</h1>
-                              <p class="color-white">In cursus orci non ipsum gravida dignissim</p>
+                              <p class="color-white">Отмечу только самые значимые</p>
                          </div>
 
                          <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
@@ -244,13 +256,7 @@
                <div class="col-md-offset-1 col-md-10 col-sm-12">
                     <i class="wow fadeInUp fa fa-star" data-wow-delay="0.6s"></i>
                     <h2 class="wow fadeInUp" data-wow-delay="0.8s">Портфолио</h2>
-                    <p class="wow fadeInUp" data-wow-delay="1s"><a href="">Примеры отчетов</a></p>
-                    <p class="wow fadeInUp" data-wow-delay="1s"><a href="">Примеры отчетов</a></p>
-                    <p class="wow fadeInUp" data-wow-delay="1s"><a href="">Примеры отчетов</a></p>
-                    <p class="wow fadeInUp" data-wow-delay="1s"><a href="">Примеры отчетов</a></p>
-                    <p class="wow fadeInUp" data-wow-delay="1s"><a href="">Примеры отчетов</a></p>
-                    <p class="wow fadeInUp" data-wow-delay="1s"><a href="">Примеры отчетов</a></p>
-                    <p class="wow fadeInUp" data-wow-delay="1s"><a href="">Примеры отчетов</a></p>
+                    <p class="wow fadeInUp" data-wow-delay="1s"><a href="">Примеры отчетов</a></p>                    
                </div>
 
           </div>

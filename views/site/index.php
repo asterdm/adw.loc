@@ -22,11 +22,15 @@
                <div class="col-md-6 col-sm-6">
                     <div class="home-thumb">
                          <div class="section-title">
-                              <h4 class="wow fadeInUp" data-wow-delay="0.3s">добро пожаловать на мою страницу</h4>
+                             <h4 class="wow fadeInUp" data-wow-delay="0.3s">добро пожаловать на мою страницу</h4>
                               <h1 class="wow fadeInUp" data-wow-delay="0.6s">Меня зовут <strong>Дмитрий Югин</strong>. Я интернет-маркетолог</h1>
-                              <p class="wow fadeInUp" data-wow-delay="0.9s">Мой опыт и знания сконцентрированы на управлении интернет проектами. стратегическом планировании, размещении рекламы в Яндекс, Google, VK, Mail Group, FB а также WEB аналитике.</p>
-                              
-                              <a href="11111111111#about" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="1.4s">Подробнее</a>
+                              <p class="wow fadeInUp" data-wow-delay="0.9s">В качестве <u>интернет маркетолога</u> могу выполнять следующие обязанности</p>
+                              <h4 class="wow fadeInUp" data-wow-delay="1s"><span class="glyphicon glyphicon-ok"></span> Стратегическое планирование продвижения товаров и услуг</h4>
+                              <h4 class="wow fadeInUp" data-wow-delay="1.1s"><span class="glyphicon glyphicon-ok"></span> Маркетинговое исследование рынка и изучение целевой аудитории</h4>
+                              <h4 class="wow fadeInUp" data-wow-delay="1.2s"><span class="glyphicon glyphicon-ok"></span> Подбор команды для реализации интернет маркетинговой стратегии</h4>
+                              <h4 class="wow fadeInUp" data-wow-delay="1.3s"><span class="glyphicon glyphicon-ok"></span> Анализ эффективности рекламных материалов и достижения поставленных KPI</h4>
+                              <h4 href="11111111111#about" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="1.4s">Подробнее</a>
+
                               
                          </div>
                     </div>

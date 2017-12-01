@@ -90,4 +90,10 @@ class Client extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         return $this->password === $password;
 
     }
+    
+    public static function findClientbyId($id = 1)
+    {
+        return self::findOne($id);
+        
+    }
 }

@@ -9,6 +9,7 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\Client;
 use yii\helpers\Url;
 
 class ReportsController extends Controller
@@ -63,6 +64,18 @@ class ReportsController extends Controller
     public function actionIndex()
     {
         $data['form_url'] = Url::toRoute(['site/contact']);
+        //получить список ссылок по пользователю
+        if (!Yii::$app->user->isGuest) {
+            $client = Client::findClientbyId(Yii::$app->user->identity->id_client);
+            $reports = $client->reports;
+            var_dump($reports);die;
+        }
+            else {
+                $client = Client::findClientbyId(3);
+                $reports = $client->reports;
+
+           }
+        
         return $this->render('index', $data);
     }
 

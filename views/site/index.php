@@ -256,7 +256,7 @@
                <div class="col-md-offset-1 col-md-10 col-sm-12">
                     <i class="wow fadeInUp fa fa-star" data-wow-delay="0.6s"></i>
                     <h2 class="wow fadeInUp" data-wow-delay="0.8s">Портфолио</h2>
-                    <p class="wow fadeInUp" data-wow-delay="1s"><a href="">Примеры отчетов</a></p>                    
+                    <p class="wow fadeInUp" data-wow-delay="1s"><a href="/reports/index">Примеры отчетов</a></p>                    
                </div>
 
           </div>

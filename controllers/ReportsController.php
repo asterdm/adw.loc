@@ -67,12 +67,13 @@ class ReportsController extends Controller
         //получить список ссылок по пользователю
         if (!Yii::$app->user->isGuest) {
             $client = Client::findClientbyId(Yii::$app->user->identity->id_client);
-            $reports = $client->reports;
-            var_dump($reports);die;
+            $data['reports'] = $client->reports;
+            
+            
         }
             else {
                 $client = Client::findClientbyId(3);
-                $reports = $client->reports;
+                $data['reports']= $client->reports;
 
            }
         

@@ -1,4 +1,10 @@
 <!-- PRE LOADER -->
+<?php
+foreach ($metatags as $metatag) {
+    $this->registerMetaTag($metatag);
+}
+
+?>
 
 <div class="preloader">
      <div class="spinner">
@@ -25,10 +31,10 @@
                              <h4 class="wow fadeInUp" data-wow-delay="0.3s">добро пожаловать на мою страницу</h4>
                               <h1 class="wow fadeInUp" data-wow-delay="0.6s">Меня зовут <strong>Дмитрий Югин</strong>. Я интернет-маркетолог</h1>
                               <p class="wow fadeInUp" data-wow-delay="0.9s">В качестве <u>интернет маркетолога</u> могу выполнять следующие обязанности</p>
-                              <h4 class="wow fadeInUp" data-wow-delay="1s"><span class="glyphicon glyphicon-ok"></span> Стратегическое планирование продвижения товаров и услуг</h4>
-                              <h4 class="wow fadeInUp" data-wow-delay="1.3s"><span class="glyphicon glyphicon-ok"></span> Маркетинговое исследование рынка и изучение целевой аудитории</h4>
-                              <h4 class="wow fadeInUp" data-wow-delay="1.6s"><span class="glyphicon glyphicon-ok"></span> Подбор команды для реализации интернет маркетинговой стратегии</h4>
-                              <h4 class="wow fadeInUp" data-wow-delay="1.9s"><span class="glyphicon glyphicon-ok"></span> Анализ эффективности рекламных материалов и достижения поставленных KPI</h4>
+                              <h4 class="wow fadeInUp" data-wow-delay="1s"><span class="fa fa-check-square-o"></span> Стратегическое планирование продвижения товаров и услуг</h4>
+                              <h4 class="wow fadeInUp" data-wow-delay="1.3s"><span class="fa fa-check-square-o"></span> Маркетинговое исследование рынка и изучение целевой аудитории</h4>
+                              <h4 class="wow fadeInUp" data-wow-delay="1.6s"><span class="fa fa-check-square-o"></span> Подбор команды для реализации интернет маркетинговой стратегии</h4>
+                              <h4 class="wow fadeInUp" data-wow-delay="1.9s"><span class="fa fa-check-square-o"></span> Анализ эффективности рекламных материалов и достижения поставленных KPI</h4>
                               <a href="11111111111#about" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="2s">Подробнее</a>
 
                               

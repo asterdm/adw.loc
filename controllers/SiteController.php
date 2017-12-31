@@ -63,6 +63,12 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $data['form_url'] = Url::toRoute(['site/contact']);
+        $data['metatags'] = [
+            ['name' => 'keywords', 'content' => 'Интернет маркетолог, интернет маркетолог обязанности'],
+            ['name' => 'description', 'content' => 'Интернет маркетолог Дмитрий Югин портфолио'],
+            ['name' => 'Robots', 'content' => 'INDEX'],
+            ['name' => 'Author', 'content' => 'Dmitry Yugin'],       
+            ];
         return $this->render('index', $data);
     }
 

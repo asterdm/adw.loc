@@ -103,6 +103,6 @@ class Page extends \yii\db\ActiveRecord
      */
     public function getYoutubes()
     {
-        return $this->hasMany(Youtube::className(), ['youtube_page_id1' => 'page_id']);
+        return $this->hasMany(Youtube::className(), ['youtube_page_id' => 'page_id']);
     }
 }

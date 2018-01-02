@@ -60,4 +60,9 @@ class Category extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Page::className(), ['page_category_id' => 'category_id']);
     }
+    
+    public function getMeta()
+    {
+        return $this->hasMany(CategoryMeta::className(), ['category_meta_category_id' => 'category_id']);
+    }
 }

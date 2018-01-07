@@ -3,11 +3,11 @@
 <?php use yii\helpers\Url ?>
 <?php
     $this->title = $page->page_title;
-
     $this->registerMetaTag(['name' => 'keywords', 'content' => $page_meta->page_keywords]);
     $this->registerMetaTag(['name' => 'description', 'content' => $page_meta->page_description]);
     $this->registerMetaTag(['name' => 'Robots', 'content' => $page_meta->robots]);
-    $this->registerMetaTag(['name' => 'Author', 'content' => $page_meta->page_author]);       
+    $this->registerMetaTag(['name' => 'Author', 'content' => $page_meta->page_author]);
+    $this->params['breadcrumbs'] = $breadcrumbs;
 
 ?>
 <section id="quotes" class="parallax-section">
@@ -26,7 +26,7 @@
                         <h3 class="wow fadeInUp" data-wow-delay="<?= $t ?>s"><a href="<?= Url::toRoute(['/portfolio', 'category_id' => $category->category_id]) ?>"><?= $category->category_headline ?></a></h3>
                             <?php if (!empty($category->sub_category)) : ?>
                                 <?php foreach ($category->sub_category as $sub_category): ?>
-                            <p class="wow fadeInUp" data-wow-delay="<?= $t ?>s"><a href="<?= 'sdf' ?>"><?= $sub_category->category_headline ?></a></p>
+                            <p class="wow fadeInUp" data-wow-delay="<?= $t ?>s"><a href="<?= Url::toRoute(['/portfolio', 'category_id' => $sub_category->category_id]) ?>"><?= $sub_category->category_headline ?></a></p>
                                 <?php endforeach ?>
                             <?php endif ?>                          
                     </div>        
